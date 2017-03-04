@@ -140,6 +140,49 @@
 	background: none;
 }
 
+.place {
+	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	font-size: 1.05em;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: .25em;
+	cursor: pointer;
+	color: #fff;
+	border: none;
+	background: none;
+        position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1.85em 2.35em;
+	-webkit-transition: opacity .3s, -webkit-transform .3s;
+	transition: opacity .3s, transform .3s;
+	-webkit-transform: translate3d(-5px, 0, 0);
+	transform: translate3d(-5px, 0, 0);
+}
+
+
+
+.no-touch .grid__item:hover .place {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+
+.no-touch .place--button {
+    opacity: 0;
+}
+
+.no-touch .place--button:hover {
+    color: #fff;
+    outline: none;
+}
+
+.place--button  {
+   color: #5c5edc;
+}
+
 .action:focus {
 	outline: none;
 }

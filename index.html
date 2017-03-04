@@ -36,14 +36,7 @@
 			<button class="action filter__item" data-filter=".trousers"><i class="icon icon--trousers"></i><span class="action__text">Pistacio</span></button>
 			<button class="action filter__item" data-filter=".shoes"><i class="icon icon--shoe"></i><span class="action__text">Almond</span></button>
             <button1 onclick="document.getElementById('id01').style.display='block'">Login</button1>
-            
-            
-
-
-
-
-            
-            
+                            
         </div>
                         
 		<button class="cart">
@@ -57,7 +50,7 @@
 		<!-- Blueprint header -->
 		<header class="bp-header cf">
 			<span>Get Baked Bakery  <span class="bp-icon bp-icon-about" data-content="A great way to fly, and enjoy a cake in the meantime, if you know what I mean ;)"></span></span>
-			<h1>Space Cakes <span>powered by <a href="https://www.facebook.com/farkist">Farkas</a> &amp;  <a href="https://www.facebook.com/arkadiusz.paryz">Arkadiusz</a> &amp; <a href="https://www.facebook.com/rares.onescu">Rares</a></span></h1>
+			<h1>Space Cakes <span> by <a href="https://www.facebook.com/farkist">Farkas</a> &amp;  <a href="https://www.facebook.com/arkadiusz.paryz">Arkadiusz</a> &amp; <a href="https://www.facebook.com/rares.onescu">Rares</a></span></h1>
 			<nav>
 				
 			</nav>
@@ -112,7 +105,22 @@ class="close" title="Close Modal">&times;</span>
 					<span class="meta__brand">Chocolicious bottom</span>
 					<span class="meta__price">$5</span>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+                
+                <button id="myBtn" class="place place--button">Add to cart</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="">
+    <span class="close">&times;</span>
+    <p>Select topping</p>
+      <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+  </div>
+
+</div>
+                
+				
 			</div>
          
 			<div class="grid__item shirts">
@@ -176,21 +184,16 @@ class="close" title="Close Modal">&times;</span>
 		</section>
 		<!-- /grid-->
 	</div>
-    <script>
-// Get the modal
-var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
     
 	<!-- /view -->
 	<script src="js/isotope.pkgd.min.js"></script>
 	<script src="js/flickity.pkgd.min.js"></script>
 	<script src="js/main.js"></script>
+    <script src="js/elements.js"></script>
+    
+    
+    
+
 </body>
 </html>

@@ -1,25 +1,5 @@
 
-<html>
-<head>
-<body>
 
-<h2>Modal Example</h2>
-
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
-    
-    <script>
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -45,6 +25,3 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-</script>
-
-</body>
